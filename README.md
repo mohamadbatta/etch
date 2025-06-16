@@ -58,7 +58,7 @@ Edit
 1. **Clone the repository**
 
 ```bash
-git clone https://github.com/your-username/etch-app.git
+git clone https://github.com/mohamadbatta/etch-app.git
 cd etch-app
 Install dependencies
 
