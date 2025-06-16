@@ -47,9 +47,6 @@ etch/
 ├── README/README.md # This file
 └── app.json / package.json
 
-yaml
-Copy
-Edit
 
 ---
 
@@ -57,27 +54,20 @@ Edit
 
 1. **Clone the repository**
 
-```bash
+
 git clone https://github.com/mohamadbatta/etch-app.git
-cd etch-app
+cd etch
 Install dependencies
 
-bash
-Copy
-Edit
 npm install
 Run the app
 
-bash
-Copy
-Edit
+
 npx expo start
 🧪 Test Credentials
 Use the following code to pass the verification step:
 
-plaintext
-Copy
-Edit
+
 Code: 0000
 🔒 Password Requirements
 At least 8 characters
