@@ -27,7 +27,7 @@ export default function EmailScreen() {
   });
 
   // Navigate to verification screen after form submission
-  const onSubmit = (data: { email: string }) => {
+  const onSubmit = (data) => {
     console.log('Email submitted:', data.email);
     router.push('/auth/verify');
   };

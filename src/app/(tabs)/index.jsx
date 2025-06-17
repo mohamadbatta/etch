@@ -56,35 +56,35 @@ export default function HomeScreen() {
   );
 
   // Render category filter button
-  const renderCategory = ({ item: cat }) => {
-    const isSelected = filter === cat.name; // Check if the category is selected
-    return (
-      <TouchableOpacity
-        onPress={() => setFilter(cat.name)} // Update the filter on press
-        className={`flex-row items-center px-5 py-3 rounded-full mr-3 ${
-          isSelected ? 'bg-black' : 'bg-gray-100'
-        }`}
-        style={{
-          shadowColor: '#000',
-          shadowOffset: { width: 0, height: 1 },
-          shadowOpacity: 0.1,
-          shadowRadius: 2,
-          elevation: 2, // For Android shadow
-        }}
+ const renderCategory = ({ item: cat }) => {
+  const isSelected = filter === cat.name;
+  return (
+    <TouchableOpacity
+      onPress={() => setFilter(cat.name)}
+      className={`flex-row items-center px-4 py-22 rounded-full mr-3 ${
+        isSelected ? 'bg-black' : 'bg-gray-200'
+      }`}
+      style={{
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 1 },
+        shadowOpacity: 0.1,
+        shadowRadius: 2,
+        elevation: 3,
+      }}
+    >
+      <MaterialCommunityIcons
+        name={cat.icon}
+        size={20}
+        color={isSelected ? '#fff' : '#374151'} // gray-700
+      />
+      <Text
+        className={`ml-2 text-base ${isSelected ? 'text-white font-semibold' : 'text-gray-700'}`}
       >
-        <MaterialCommunityIcons
-          name={cat.icon}
-          size={22}
-          color={isSelected ? '#fff' : '#6b7280'} // Darker icon if not selected
-        />
-        <Text
-          className={`ml-2 text-sm ${isSelected ? 'text-white font-semibold' : 'text-gray-700'}`}
-        >
-          {cat.name}
-        </Text>
-      </TouchableOpacity>
-    );
-  };
+        {cat.name}
+      </Text>
+    </TouchableOpacity>
+  );
+};
 
   return (
     <View className="flex-1 p-3 pt-10 bg-white">

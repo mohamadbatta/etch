@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "",
+    "name": "etch",
     "slug": "etch",
-   "scheme": "etch",
+    "scheme": "etch",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/logo.png",
@@ -29,6 +29,19 @@
     },
     "plugins": [
       "expo-router"
-    ]
+    ],
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "7b93eb19-e815-46a0-bd30-edf4bedd8133"
+      }
+    },
+    "owner": "mohamadbatta",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/7b93eb19-e815-46a0-bd30-edf4bedd8133"
+    }
   }
 }
